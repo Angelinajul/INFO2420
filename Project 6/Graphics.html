@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -8,47 +7,40 @@
 
 <title>Extreme Honeymoons - Graphics</title>
 
-
 <style type="text/css">
 
 #thumbs, #image
 {
-	width:700px;
-	border: solid 1px #000;
-	text-align:center;
-	margin:0 auto 0 auto;
-	color:#000;
-	background:#eee;
-	padding:5px;
+    width:700px;
+    border:solid 1px #000;
+    text-align:center;
+    margin:0 auto;
+    color:#000;
+    background:#eee;
+    padding:5px;
 }
-
 
 #thumbs
 {
-	margin-top:10px;
+    margin-top:10px;
 }
-
 
 #thumbs img
 {
-	border:solid 1px #000;
-	margin:5px;
-	width:150px;
-	height:100px;
+    border:solid 1px #000;
+    margin:5px;
+    width:150px;
+    height:100px;
 }
-
 
 #image
 {
-	height:400px;
+    height:400px;
 }
 
 </style>
 
-
-
 <script type="text/javascript">
-
 
 // PRELOAD PRINT BUTTON AND LOGO IMAGES
 
@@ -58,99 +50,64 @@ var PrintButton2 = new Image();
 var logo1 = new Image();
 var logo2 = new Image();
 
-
-
-if(document.images)
+if (document.images)
 {
+    PrintButton1.src = "Print_.png";
+    PrintButton2.src = "Print2.png";
 
-	PrintButton1.src = "Print_.png";
-	PrintButton2.src = "Print_.png";
-
-	logo1.src = "Business_logo1.png";
-	logo2.src = "Business_logo2.png";
-
+    logo1.src = "Business_logo1.png";
+    logo2.src = "Business_logo2.png";
 }
 
 
-
-
-
+// IMAGE SWAP
 
 var imgArray = new Array(
-
-"CoupleBike3Lg.jpg",
-"CoupleEvening3Lg.jpg",
-"OwnerMotorcycle3Lg.jpg",
-"CoupleScuba3Lg.jpg"
-
+    "CoupleBike3Lg.jpg",
+    "CoupleEvening3Lg.jpg",
+    "OwnerMotorcycle3Lg.jpg",
+    "CoupleScuba3Lg.jpg"
 );
-
-
 
 var titleArray = new Array(
-
-"Couple on a Bike",
-"Couple in the Evening",
-"Owner on a Motorcycle",
-"Couple Scuba Diving"
-
+    "Couple on a Bike",
+    "Couple in the Evening",
+    "Owner on a Motorcycle",
+    "Couple Scuba Diving"
 );
 
-
-
-var imgPath = "images/fullsize/";
-
+// All images are in the same folder as Graphics.htm
+var imgPath = "";
 
 
 function swapImage(imgID)
 {
+    var theImage = document.getElementById("theImage");
+    var textDiv = document.getElementById("bottomText");
 
-	var theImage = document.getElementById("theImage");
-
-	var textDiv = document.getElementById("bottomText");
-
-
-	theImage.src = imgPath + imgArray[imgID];
-
-	textDiv.innerHTML = titleArray[imgID];
-
+    theImage.src = imgPath + imgArray[imgID];
+    textDiv.innerHTML = titleArray[imgID];
 }
-
 
 
 function preloadImages()
 {
-
-	for(var i = 0; i < imgArray.length; i++)
-	{
-
-		var tempImage = new Image();
-
-		tempImage.src = imgPath + imgArray[i];
-
-	}
-
+    for (var i = 0; i < imgArray.length; i++)
+    {
+        var tempImage = new Image();
+        tempImage.src = imgPath + imgArray[i];
+    }
 }
-
-
 
 </script>
 
-
 </head>
-
-
 
 <body onload="preloadImages()">
 
-
-
 <div align="center">
 
-
-
-
-
+<!-- PRINT BUTTON -->
 
 <div>
 
@@ -158,95 +115,63 @@ function preloadImages()
 onmouseover="document.PrintButton.src=PrintButton2.src;"
 onmouseout="document.PrintButton.src=PrintButton1.src;">
 
-
 <img src="Print_.png"
 width="200"
 height="50"
 name="PrintButton"
 alt="Print Page Button" />
 
-
 </a>
 
 </div>
 
-
-
 <br>
 
-
-
-
-
+<!-- LOGO -->
 
 <div>
-
 
 <a href="#"
 onmouseover="document.logo.src=logo2.src;"
 onmouseout="document.logo.src=logo1.src;">
 
-
-<img src="Business_logo2.png"
+<img src="Business_logo1.png"
 width="133"
 height="126"
 name="logo"
 alt="Extreme Honeymoons Logo" />
 
-
 </a>
-
 
 </div>
 
+<br><br>
 
-
-<br>
-<br>
-
-
-
-
-
+<!-- THUMBNAILS -->
 
 <div id="thumbs">
-
 
 <img src="CoupleBike3sm.jpg"
 alt="Couple on a Bike"
 onmouseover="swapImage(0);" />
 
-
-
 <img src="CoupleEvening3sm.jpg"
 alt="Couple in the Evening"
 onmouseover="swapImage(1);" />
 
-
-
 <img src="OwnerMotorcycle3sm.jpg"
-alt="Owner on Motorcycle"
+alt="Owner on a Motorcycle"
 onmouseover="swapImage(2);" />
-
-
 
 <img src="CoupleScuba3sm.jpg"
 alt="Couple Scuba Diving"
 onmouseover="swapImage(3);" />
 
-
-
 </div>
 
-
-
-
-
-
-
+<!-- LARGE IMAGE -->
 
 <div id="image">
-
 
 <img id="theImage"
 src="CoupleBike3Lg.jpg"
@@ -254,31 +179,20 @@ alt="Couple on a Bike"
 width="400"
 height="267" />
 
-
 <h3 id="bottomText">
 Couple on a Bike
 </h3>
 
-
 </div>
 
+<br>
 
+<!-- TWO COLUMN BACKGROUND -->
 
-
-
-
-
-
-<img src="images/2colback.jpg"
+<img src="2colback.jpg"
 alt="Two Column Background Image" />
 
-
-
 </div>
 
-
-
 </body>
-
 </html>
-
