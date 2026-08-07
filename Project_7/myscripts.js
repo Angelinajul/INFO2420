@@ -1,14 +1,14 @@
 var imgArray = new Array(
 "CoupleBike3Lg.jpg",
-"CoupleEveningLg.jpg",
-"OwnerMotorcycleLg.jpg",
+"CoupleHikingLg.jpg",
+"OwnerMotorCycleLg.jpg",
 "ScubaCoupleLg.jpg"
 );
 
 
 var titleArray = new Array(
 "Couple on a Bike",
-"Couple in the Evening",
+"Couple Hicking",
 "Owner on a Motorcycle",
 "Couple Scuba Diving"
 );
