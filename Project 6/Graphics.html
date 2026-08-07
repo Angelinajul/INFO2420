@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 
@@ -42,7 +43,6 @@
 	height:400px;
 }
 
-
 </style>
 
 
@@ -63,8 +63,8 @@ var logo2 = new Image();
 if(document.images)
 {
 
-	PrintButton1.src = "images/print1.jpg";
-	PrintButton2.src = "images/print2.jpg";
+	PrintButton1.src = "images/Print_1.png";
+	PrintButton2.src = "images/Print_2.png";
 
 	logo1.src = "images/Business_logo1.png";
 	logo2.src = "images/Business_logo2.png";
@@ -73,7 +73,7 @@ if(document.images)
 
 
 
-// IMAGE SWAP ARRAYS
+
 
 
 var imgArray = new Array(
@@ -118,7 +118,6 @@ function swapImage(imgID)
 
 
 
-
 function preloadImages()
 {
 
@@ -150,7 +149,7 @@ function preloadImages()
 
 
 
-<!-- PRINT BUTTON ROLLOVER -->
+
 
 
 <div>
@@ -160,7 +159,7 @@ onmouseover="document.PrintButton.src=PrintButton2.src;"
 onmouseout="document.PrintButton.src=PrintButton1.src;">
 
 
-<img src="images/print1.jpg"
+<img src="images/Print_1.png"
 width="200"
 height="50"
 name="PrintButton"
@@ -177,7 +176,7 @@ alt="Print Page Button" />
 
 
 
-<!-- LOGO ROLLOVER -->
+
 
 
 <div>
@@ -207,7 +206,7 @@ alt="Extreme Honeymoons Logo" />
 
 
 
-<!-- IMAGE SWAP THUMBNAILS -->
+
 
 
 <div id="thumbs">
@@ -242,6 +241,7 @@ onmouseover="swapImage(3);" />
 
 
 
+
 <!-- LARGE IMAGE DISPLAY -->
 
 
@@ -266,7 +266,7 @@ Couple on a Bike
 
 
 
-<!-- TWO COLUMN BACKGROUND IMAGE -->
+
 
 
 <img src="images/2colback.jpg"
@@ -281,3 +281,4 @@ alt="Two Column Background Image" />
 </body>
 
 </html>
+```
