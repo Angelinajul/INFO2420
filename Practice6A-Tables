@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Exercises 8-1, 8-2, 8-3</title>
+
+    <style>
+        td, th {
+            border: 1px solid gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h2>Exercise 8-1: Simple Table</h2>
+
+<table>
+
+    <tr>
+        <th>Album</th>
+        <th>Year</th>
+    </tr>
+
+    <tr>
+        <td>Rubber Soul</td>
+        <td>1965</td>
+    </tr>
+
+    <tr>
+        <td>Revolver</td>
+        <td>1966</td>
+    </tr>
+
+    <tr>
+        <td>Sgt. Pepper's</td>
+        <td>1967</td>
+    </tr>
+
+    <tr>
+        <td>The White Album</td>
+        <td>1968</td>
+    </tr>
+
+    <tr>
+        <td>Abbey Road</td>
+        <td>1969</td>
+    </tr>
+
+</table>
+
+
+<h2>Exercise 8-2: Column Spans</h2>
+
+<table>
+
+    <tr>
+        <th colspan="3">The Sunday Night Movie</th>
+    </tr>
+
+    <tr>
+        <td>7:00pm</td>
+        <td>7:30pm</td>
+        <td>8:00pm</td>
+    </tr>
+
+    <tr>
+        <td>Perry Mason</td>
+        <td>Candid Camera</td>
+        <td>What's My Line?</td>
+    </tr>
+
+    <tr>
+        <td>Bonanza</td>
+        <td colspan="2">The Wackiest Ship in the Army</td>
+    </tr>
+
+</table>
+
+
+<h2>Exercise 8-3: Row Spans</h2>
+
+<table>
+
+    <tr>
+        <td>apples</td>
+        <td>bananas</td>
+        <td>lychees</td>
+    </tr>
+
+    <tr>
+        <td>pears</td>
+        <td rowspan="2">oranges</td>
+        <td>pineapple</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
