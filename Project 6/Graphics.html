@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <meta charset="UTF-8">
@@ -20,21 +21,27 @@
 	padding:5px;
 }
 
+
 #thumbs
 {
 	margin-top:10px;
 }
 
+
 #thumbs img
 {
 	border:solid 1px #000;
 	margin:5px;
+	width:150px;
+	height:100px;
 }
+
 
 #image
 {
 	height:400px;
 }
+
 
 </style>
 
@@ -43,7 +50,7 @@
 <script type="text/javascript">
 
 
-
+// PRELOAD PRINT BUTTON AND LOGO IMAGES
 
 var PrintButton1 = new Image();
 var PrintButton2 = new Image();
@@ -52,27 +59,29 @@ var logo1 = new Image();
 var logo2 = new Image();
 
 
+
 if(document.images)
 {
 
 	PrintButton1.src = "images/print1.jpg";
 	PrintButton2.src = "images/print2.jpg";
 
-	logo1.src = "Images/Thumbnails/Business_logo2.png";
-	logo2.src = "Images/Thumbnails/Business_logo2.png";
+	logo1.src = "images/Business_logo1.png";
+	logo2.src = "images/Business_logo2.png";
 
 }
 
 
 
-// Image Swap
+// IMAGE SWAP ARRAYS
+
 
 var imgArray = new Array(
 
-"Images/Thumbnails/CoupleBike3Lg.jpg",
-"Images/Thumbnails/CoupleEvening3Lg.jpg",
-"Images/Thumbnails/OwnerMotorcycle3Lg.jpg",
-"Images/Thumbnails/CoupleScuba3Lg.jpg"
+"CoupleBike3Lg.jpg",
+"CoupleEvening3Lg.jpg",
+"OwnerMotorcycle3Lg.jpg",
+"CoupleScuba3Lg.jpg"
 
 );
 
@@ -109,6 +118,7 @@ function swapImage(imgID)
 
 
 
+
 function preloadImages()
 {
 
@@ -122,6 +132,7 @@ function preloadImages()
 	}
 
 }
+
 
 
 </script>
@@ -140,6 +151,7 @@ function preloadImages()
 
 
 <!-- PRINT BUTTON ROLLOVER -->
+
 
 <div>
 
@@ -176,7 +188,7 @@ onmouseover="document.logo.src=logo2.src;"
 onmouseout="document.logo.src=logo1.src;">
 
 
-<img src="Images/Thumbnails/Business_logo2.png"
+<img src="images/Business_logo1.png"
 width="133"
 height="126"
 name="logo"
@@ -201,27 +213,32 @@ alt="Extreme Honeymoons Logo" />
 <div id="thumbs">
 
 
-<img src="images/thumbnails/Image1sm.jpg"
+<img src="images/thumbnails/CoupleBike3sm.jpg"
 alt="Couple on a Bike"
 onmouseover="swapImage(0);" />
 
 
-<img src="images/thumbnails/Image2sm.jpg"
+
+<img src="images/thumbnails/CoupleEvening3sm.jpg"
 alt="Couple in the Evening"
 onmouseover="swapImage(1);" />
 
 
-<img src="images/thumbnails/Image3sm.jpg"
+
+<img src="images/thumbnails/OwnerMotorcycle3sm.jpg"
 alt="Owner on Motorcycle"
 onmouseover="swapImage(2);" />
 
 
-<img src="images/thumbnails/Image4sm.jpg"
+
+<img src="images/thumbnails/CoupleScuba3sm.jpg"
 alt="Couple Scuba Diving"
 onmouseover="swapImage(3);" />
 
 
+
 </div>
+
 
 
 
@@ -232,7 +249,7 @@ onmouseover="swapImage(3);" />
 
 
 <img id="theImage"
-src="images/fullsize/Image1Lg.jpg"
+src="images/fullsize/CoupleBike3Lg.jpg"
 alt="Couple on a Bike"
 width="400"
 height="267" />
@@ -246,6 +263,10 @@ Couple on a Bike
 </div>
 
 
+
+
+
+<!-- TWO COLUMN BACKGROUND IMAGE -->
 
 
 <img src="images/2colback.jpg"
